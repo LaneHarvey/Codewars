@@ -7,6 +7,6 @@
 // Write a function arrowArea, which returns the area of the arrow, rounded to two decimal places.
 
 function arrowArea(a,b) {
-    return +(a/2 * b/2).toFixed(2)
+    return +((a * b) / 4).toFixed(2);
 }
 arrowArea(7,6)
