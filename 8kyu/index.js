@@ -11,3 +11,9 @@ function positiveSum(arr) {
 }
 
 positiveSum([1,3,5,6,-8,2])
+
+// Best Practice
+
+function positiveSum(arr) {
+   return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+}
