@@ -1,3 +1,15 @@
+// Convert boolean values to strings 'Yes' or 'No'.
+
+// Complete the boolToWord method.
+
+// Given: a boolean value
+
+// Return: a 'Yes' string for true and a 'No' string for false
+
+function boolToWord(bool){
+  return bool ? 'Yes':'No';
+}
+
 // Fake Binary
 // Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
 // Return the resulting string.
