@@ -1,3 +1,25 @@
+// Fake Binary
+// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
+// Return the resulting string.
+
+function fakeBin(x){
+  var split = x.split('');
+  var result = '';
+  for (var i=0; i<split.length; i++){
+    if(split[i]<5){
+      result += 0;
+    } else{
+      result += 1;
+    }
+  }
+  return result;
+}
+// Best Practice
+
+function fakeBin(x) {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+}
+
 // Filter out the geese
 // Write a function, gooseFilter, that takes an array of strings as an argument and returns a filtered array containing the same elements but with the 'geese' removed.
 
@@ -18,7 +40,7 @@
 function gooseFilter (birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   return birds.filter(b => !geese.includes(b));
-};
+}
 
 // Sum of positive
 // You get an array of numbers, return the sum of all of the positives ones.
