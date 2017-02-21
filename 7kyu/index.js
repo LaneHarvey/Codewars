@@ -10,3 +10,14 @@ function arrowArea(a,b) {
     return +((a * b) / 4).toFixed(2);
 }
 arrowArea(7,6)
+
+// Mumbling
+
+// This time no story, no theory. The examples below show you how to write function accum:
+
+// The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+function accum(s) {
+  return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
+}
+accum("RqaEzty");
