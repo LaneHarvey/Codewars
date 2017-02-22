@@ -9,7 +9,7 @@
 function arrowArea(a,b) {
     return +((a * b) / 4).toFixed(2);
 }
-arrowArea(7,6)
+arrowArea(7,6);
 
 // Mumbling
 
@@ -21,3 +21,13 @@ function accum(s) {
   return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
 }
 accum("RqaEzty");
+
+// Say hello!
+
+// Write a function to greet a person. Function will take name as input and greet the person by saying hello.
+
+// Return null/nil if input is empty string or null/nil.
+
+function greet(name) {
+  return name ? 'hello ' + name + '!' : null;
+}
