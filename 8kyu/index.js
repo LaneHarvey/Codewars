@@ -1,5 +1,4 @@
 // Convert boolean values to strings 'Yes' or 'No'.
-
 // Complete the boolToWord method.
 
 // Given: a boolean value
@@ -54,6 +53,29 @@ function gooseFilter (birds) {
   return birds.filter(b => !geese.includes(b));
 }
 
+// Heads and Legs
+// “A farm contains chickens and cows. There are x legs and y heads. How many chickens and cows are there?”
+
+// Where x <= 1000 and y <=1000
+
+// Return an array list - [Heads, Legs]
+
+// If either the heads & legs is negative, the result of your calculation is negative or the calculation is a float return "No solutions" (no valid cases).
+
+// However, if 0 heads and 0 legs are given always return [0, 0] since zero heads must give zero animals.
+
+function animals(heads, legs) {
+  const cows = legs / 2 - heads;
+  const chickens = heads - cows;
+
+  if (legs & 1 || chickens > heads || cows > heads)
+    return "No solutions";
+  else
+    return [chickens, cows];
+}
+
+animals(6, 24);
+
 // Sum of positive
 // You get an array of numbers, return the sum of all of the positives ones.
 
@@ -67,15 +89,16 @@ function positiveSum(arr) {
   return sum;
 }
 
+// Best Practice
+
 function positiveSum(arr) {
    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
 }
 
-// Sum of positive Best Practice uses reduce
-
 // Volume of a Cuboid
 // Bob needs a fast way to calculate the volume of a cuboid with three values: length, width and the height of the cuboid.
 // Write a function to help Bob with this calculation.
+
 var Kata;
 
 Kata = (function() {
