@@ -22,7 +22,7 @@ arrowArea(7,6);
 // If the time-string-format is invalid, return null.
 
 function timeCorrect(timestring) {
-
+  // start tomorrow
 }
 
 
